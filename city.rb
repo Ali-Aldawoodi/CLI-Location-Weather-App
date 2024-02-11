@@ -3,17 +3,13 @@
     require 'json'
 
 class City
-    attr_accessor(:city_name, :latitude, :longitude)
-#Attributes
-    # @city_name
-    # @latitude
-    # @longitude 
+    attr_reader(:city_name, :latitude, :longitude)
 
-    # def initialize(init_city_name, init_latitude, init_longitude)
-    #     @city_name = init_city_name
-    #     @latitude = init_latitude
-    #     @longitude = init_longitude
-    # end
+    def initialize(init_city_name, init_latitude, init_longitude)
+        @city_name = init_city_name
+        @latitude = init_latitude
+        @longitude = init_longitude
+    end
 
 #Methods
 def fetch_city(name)

@@ -6,8 +6,7 @@ require_relative 'display.rb'
         puts "Welcome!"
          print "Enter your city: "
          city_name = gets.chomp.strip
-         find_lat_and_lon = City.new
-          # find_lat_and_lon.fetch_city
+         find_lat_and_lon = City.new('Denver', 39.73915, -104.9847)
           coordinates = find_lat_and_lon.fetch_city(city_name)
   
   
@@ -21,7 +20,7 @@ require_relative 'display.rb'
             display.display_weather(city_name, latitude, longitude, current_temp, daily_forecast)
           end
         end
-        
+
       end
       main
   
