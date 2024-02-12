@@ -11,7 +11,6 @@ class City
         @longitude = init_longitude
     end
 
-#Methods
 def fetch_city(name)
    
     encoded_name = URI.encode_www_form_component(name)
