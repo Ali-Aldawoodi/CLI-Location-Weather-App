@@ -1,5 +1,5 @@
 # CLI-Location-Weather-App
-User will be able either use their IP address or enter a city name and then get that cities current temperature, as well as a 7-day forecast of current temperatures and the highs and lows. The data will be displayed in table formay in the console. 
+User will be able either use their IP address or enter a city name and then get that cities current temperature, as well as a 7-day forecast of current temperatures and the highs and lows. The data will be displayed in table format in the console. 
 
 Gems
 Install 'terminal-table'
@@ -15,6 +15,12 @@ Get city
   GET "https://geocoding-api.open-meteo.com/v1/search?name=Berlin&count=1&language=en&format=json"
 Parameter	Type	Description
 latitude & longitude	string	Retrieves city
+
+Get IP address weather
+GET "http://api.weatherapi.com/v1/forecast.json?key=442c202c6cb2469897a230122241102&q=auto:ip&days=7"
+Parameter	Type	Description
+auto:ip	integer	Retrieves city weather information based on IP address
+
 
 Deployment
 To deploy this project run
