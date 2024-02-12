@@ -13,9 +13,6 @@ class IP_Weather
           
 
           daily_ip_date = ip_weather_data['forecast']['forecastday'].map { |day| day['date'] }
-          # daily_ip_max_temp = ip_weather_data['forecast']['forecastday'].map { |day| day['day']['maxtemp_f'] }
-          # daily_ip_min_temp = ip_weather_data['forecast']['forecastday'].map { |day| day['day']['mintemp_f'] }
-          
     
         daily_ip_forecast = {
         'date' => daily_ip_date,
