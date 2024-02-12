@@ -5,8 +5,6 @@ class Display
 def display_weather(city_name, latitude, longitude, current_temp, daily_forecast)
     table_rows = []
     table_rows << ['Date', 'High Temperature (°F)', 'Low Temperature (°F)']
-
-    dates = daily_forecast["time"]
     
     daily_forecast['time'].each_with_index do |date, index|
         high_temp = daily_forecast['temperature_2m_max'][index]
