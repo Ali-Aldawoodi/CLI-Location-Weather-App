@@ -6,8 +6,6 @@ class IP_Display
 def display_ip_weather(current_ip_temp, daily_ip_forecast)
     table_rows = []
     table_rows << ['Date', 'High Temperature (°F)', 'Low Temperature (°F)']
-
-    daily_ip_forecast = 
     
     daily_ip_forecast['date'].each_with_index do |date, index|
         high_temp = daily_ip_forecast['maxtemp_f'][index]
